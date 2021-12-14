@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <form action="" class="form-container">
+        <div>
+            <img src="./images/Logo.gif" alt="" class="img-layout">
+        <h1 class="text">Neonatal Feeding Study</h1>
+            <div style="text-align: right; margin-right: 60px;" > 
+                <label for="Date"> Today is:</label>
+                <textarea rows="1" cols="8" type="text" id="Date"> </textarea>
+            </div>
+            <div class="box">
+                <div >
+                    <label class="form__label" for="Name">1) Name(first, last):</label>
+                    <input class="form__input" type="text" id="FName">
+                    <input class="form__input" type="text" id="LName">
+                </div>
+            </div>
+            <div class="box" >
+                <label class="form__label" for="MR">2) Medical Record#:</label>
+                <input type="text" class="form__input1">
+            </div>
+            <div class="box" >
+                <label class="form__label"  for="DOB">3) Date of birth:</label>
+                <input type="date" class="form__input1" id="DOB">
+            </div>
+            <div class="box">
+                <label class="form__label" for="Physician">4) Physician:</label>
+                <select id="Physician" onchange = "txt(this)">
+                    <option value="1"> Dr.Warren Albert</option>
+                    <option value="2"> Other</option>
+                </select>
+            </div>
+            <div class="box" >
+                <label class="form__label"  for="Other">If other(specify):</label>
+                <input type="text" class="form__input" id="Other" >
+            </div>
+            <div class="box form__item">
+                <div>
+                    <label class="form__label" >5) I minute APGAR Score: Each score must be 0,1, or 2</label>
+                </div>
+                <div>
+                    <div class="box" >
+                        <label class="form__label" for="Activity">Activity</label>
+                        <input onkeyup="sum()" type="text" id="Activity" name="number" class="form__input2">
+                    </div>
+                    <div class="box" >
+                        <label class="form__label" for="Pulse">Pulse</label>
+                        <input onkeyup="sum()" type="text" id="Pulse" name="number" class="form__input2">
+                    </div>
+                    <div class="box" >
+                        <label class="form__label" for="Grimace">Grimace(Reflex,Irritability)</label>
+                        <input onkeyup="sum()" type="text" id="Grimace" name="number" class="form__input2">
+                    </div>
+                    <div class="box" >
+                        <label class="form__label" for="Appearance">Appearance(Skin Color)</label>
+                        <input onkeyup="sum()" type="text" id="Appearance" name="number" class="form__input2">
+                    </div>
+                    <div class="box" >
+                        <label class="form__label" for="Respiration">Respiration</label>
+                        <input onkeyup="sum()" type="text" id="Respiration" name="number" class="form__input2">
+                    </div>
+                    <div class="box" >
+                        <label class="form__label" for="TOTAL">TOTAL</label>
+                        <input type="text" id="TOTAL" class="form__input2">
+                    </div>
+                </div>
+
+            </div>
+            <div class="box" >
+                <label class="form__label" for="BW">6) Birth weight(gms): weight must be >=1200 gms.</label>
+                <input type="text">
+            </div>
+            <div class="box" >
+                <label class="form__label" for="PC">7) Parental Consent(required):</label>
+                <input type="checkbox" >
+            </div>
+            
+                <div class="button box">
+                    <input type="button" value="Register">
+                    <input type="reset" value="Reload Page">
+                </div>
+            </div>
+    </form>
+    <script src="./form.js"></script>
+</body>
+
+</html>  

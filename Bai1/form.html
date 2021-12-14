@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <form class="form-container" method="get" action="infor.html" >
+        <div class="box">
+            <label class="form__label" for="name"> Họ và tên:</label>
+            <input class="form__input" type="text" name="name" id="name">
+        </div>
+        <div class="box">
+            <label class="form__label" for="email"> Email:</label>
+            <input class="form__input" type="email" name="email" id="email">
+        </div>
+        <div class="box">
+            <label class="form__label" for="gender">Giới tính:</label>
+            <input type="radio" value="Nam" name="gender"> Nam, <input type="radio" value="Nữ" id="gender" name="gender"> Nữ
+        </div>
+        <div class="box">
+            <input type="checkbox" name="checkbox" id="checkbox" value="Tôi đã có nghề nghiệp ổn định">
+            Tôi đã có nghề nghiệp ổn định
+        </div>
+        <div class="box">
+            <label class="form__label" for="area">Đến từ:</label>
+            <select name="area" id="area">
+                <option  value="Miền bắc"> Miền bắc</option>
+                <option value="Miền trung"> Miền trung</option>
+                <option value="Miền nam"> Miền nam</option>
+                <option value="Miền tây"> Miền tây</option>
+            </select>
+        </div>
+        <div class="box">
+            <label class="form__label" for="comment">Nội dung:</label>
+            <div>
+                <textarea class="form__input1" type="text" name="comment" id="comment" placeholder="Nội dung"></textarea>
+            </div>
+        </div>
+        <div class="button box">
+            <input type="submit" name="submit" id="submit" value="Gửi thông điệp">
+            <input type="reset" value="Nhập lại tất cả">
+        </div>
+    </form>
+</body>
+
+</html>

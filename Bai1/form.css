@@ -1,0 +1,25 @@
+.form-container {
+  max-width: 400px;
+  height: 300px;
+  margin: auto;
+  border: 1px solid blue;    
+  }
+.box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.form__label {
+  margin-left: 10px;
+  display: inline-block;
+  width: 80px;
+}
+.form__input1{
+  height: 100px;
+  width: 300px;
+  margin-left: 10px;
+}
+.button {
+  display: block;
+  text-align: right;
+  margin-right: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai5</title>
+    <link rel="stylesheet" href="../">
+    <style>
+        table{
+            border: 1px solid black; font-size: larger; text-align: center;
+        }
+        th, td{
+            padding: 0px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <table align="center">
+            <tr >
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+            <tr>
+                <td>C112</td>
+                <td>Chuột quang</td>
+                <td>10$</td>
+                <td>
+                    <input type="text" name="quantity1" id="quantity1" >
+                </td>
+                <td>
+                    <textarea rows="1" id="price1"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>B124</td>
+                <td>Bàn phím</td>
+                <td>20$</td>
+                <td>
+                    <input type="text" name="quantity2" id="quantity2" >
+                </td>
+                <td>
+                    <textarea rows="1"  id="price2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>U125</td>
+                <td>USB KingMax</td>
+                <td>15$</td>
+                <td>
+                    <input type="text" name="quantity3" id="quantity3" >
+                </td>
+                <td>
+                    <textarea rows="1" id="price3"></textarea>
+                </td>
+            </tr>
+           
+            <tr>
+                <td colspan="4" style="text-align: right;">Total</td>
+                <td><textarea rows="1" name="total" id="total">$</textarea></td>
+              
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: right;" >
+                <button type="button" id="TC" name="TC" onclick="sum()">TongCong</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="./bai5.js"></script>
+</body>
+</html>

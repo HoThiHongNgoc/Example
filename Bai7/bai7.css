@@ -1,0 +1,52 @@
+table {
+    background-color: white;
+    border-collapse: collapse;
+    max-width: 700px;
+    height: auto;
+    margin: auto;
+}
+td {
+    vertical-align: top;
+}
+.td-container{
+    display: flex;
+}
+.td-img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.td-img2{
+    float: left;
+}
+.td-img3{
+    float: right;
+}
+.td__item--1{
+    background-color: black;
+    color: white;
+    width: 20%;
+}
+.td__item--1 ul {
+
+    padding: 0px 5px;
+    list-style: none;
+}
+.td__item--2{
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+.td__item--3{
+    text-align: center;
+}
+.color{
+    color: red;
+    font-weight: bold;
+}
+.header-color{
+    color: green;
+}
+.header-color>p{
+    margin: 0;
+}

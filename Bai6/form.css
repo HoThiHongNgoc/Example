@@ -1,0 +1,46 @@
+.form-container {
+    max-width: 700px;
+    height: 750px;
+    background-color: rgb(1, 1, 87);
+    margin: auto;
+    border: 1px solid rgb(1, 1, 87);
+    color: white;
+    font-size: large;
+}
+.img-layout {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text {
+    text-align: center;
+}
+.form__label {
+    margin-left: 40px;
+    display: inline-block;
+    width: 230px;
+}
+.form__input {
+    width: 170px;
+}
+.form__input1 {
+    width: 130px;
+}
+.form__input2 {
+    width: 30px;
+}
+.form__item{
+    display: flex;
+}
+.box {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.button {
+    display: block;
+    text-align: center;
+  }
+  
+
+
+  

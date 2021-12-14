@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>NPN</title>
+    <link rel="stylesheet" href="./bai7.css">
+</head>
+
+<body style="background-image:url(./images/Wrap.jpg)">
+    <table border="1" >
+        <tr>
+            <td rowspan="4" class="td__item--1 ">
+                <h3>Why don't you visit our:</h3>
+                <ul class="header-color">
+                    <li>Home a Page</li>
+                    <li>Angel</li>
+                    <li>Card</li>
+                    <li>Gift Wrap</li>
+                    <li>Light</li>
+                </ul>
+
+            </td>
+            <td colspan="2"><img src="./images/Logo.jpg" alt="" class="td-img1"> </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="td__item--2"><span id="ngay"></span> <br>
+                <span id="until"></span>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="td-container">
+                <div>
+                    <h3 class="header-color">
+                        Welcome!</h3>
+                        <div>
+                            <img src="./images/Bells.jpg" alt="" class="td-img2">
+                        </div>
+                    <p>
+                        Welcome to <span class="color"> North Pole Novelties </span>. Consider us your complete holiday store. Whether you're a
+                        collector or simply looking for a beautiful piece to treasure for years, you'll find it at NPN.
+                        Please click on one of the many links to explore all we have to offer.</p>
+                    <h3 class="header-color">
+                        News Flash!</h3>
+                    <p>
+                        North Pole Novelties is proud to announce a new line of<span class="color">Lasseter Old Towne Village collectible
+                        houses</span> . Start building your collection of these wonderful miniature porcelain houses and shops.
+                    </p>
+                    <p>
+                        Each model has accessories to enhance the collection. Be sure to order extra trees, fences, street lights and signs to bring activity and a festive atmosphere to your miniature town.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="header-color">
+                        Who Are We?</h3>
+                        <div>
+                            <img src="./images/Adams.jpg" alt="" class="td-img3">
+                        </div>
+                    <p>
+                        Located in Seton Grove, Minnesota, North Pole Novelties is one of the oldest and largest holiday
+                        stores in the country. The store was founded in 1968 by  <span class="color">David Watkins</span> (shown here). Today, David, his family, and over 300 employees manage the daily operation of making the holiday
+                        season last all year.</p>
+                    <p>
+                        The store itself is the size of two football fields and attracts visitors from around the world.
+                        If you can't pay us a visit, order our catalogue. We will deliver to any spot in the United
+                        States and overseas. In a rush? We can deliver your order overnight! We also gift wrap.</p>
+                </div>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="td__item--3 header-color" colspan="2">
+                <p>North Pole</p>
+                <p>25 Avenue</p>
+                <p>Seton Grove, MN 53112</p>
+                <p>Teleplone:(404) 5555-1225</p>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var today = new Date();
+        var date = today.getDate()
+        var longMonth = today.toLocaleString('en-us', { month: 'long' });
+        var cmas = new Date(today.getFullYear(), 11, 24);
+        var offset = cmas.getTime() - today.getTime();
+        var oneday = 1000 * 60 * 60 * 24
+        var totalDays = Math.round(offset / oneday);
+        document.getElementById("ngay").innerHTML = "Today is"+" "+ longMonth + " " + date ;
+        document.getElementById("until").innerHTML= "Only"+" " +totalDays + "days until Christmas";
+    </script>
+
+</body>
+
+</html>

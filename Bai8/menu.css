@@ -1,0 +1,45 @@
+.container {
+    border: 1px solid blue;
+    background: gray;
+    float: left;
+    top: 60px;
+    width: 100%;
+}
+.dropbtn {
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: gray;
+    font-weight: bold;
+    width: fit-content;
+}
+.dropbtn:hover {
+    background-color: white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;  
+}
+.dropdown-content a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid green;
+}
+.dropdown-content a:hover {
+    color: white;
+    background: orange;
+}
+.show {
+    display: block;
+}
